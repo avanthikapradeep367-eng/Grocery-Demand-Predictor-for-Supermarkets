@@ -65,7 +65,3 @@ Use Case:
 This system can help supermarket owners make data-driven inventory decisions, reduce waste, and prevent product shortages.
 
 
-
-Created by: [Your Name]
-Project: Grocery Demand Predictor
-Year: 2025
