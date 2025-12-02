@@ -50,6 +50,7 @@ How to Run Locally
    streamlit run src/app_v2.py
 
 Dashboard Features:
+
 ✅ Set temperature, holiday, and offer status for next 7 days
 
 ✅ Shows demand forecast for each product
