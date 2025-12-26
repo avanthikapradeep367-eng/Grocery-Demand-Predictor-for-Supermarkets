@@ -1,67 +1,67 @@
 # 🛒 Grocery Demand Predictor for Supermarkets
 
-A machine learning project that predicts 7-day grocery demand for multiple products and provides reorder recommendations to prevent stock-outs using historical patterns, weather conditions, holidays, and offers.
+A machine learning–based system that predicts **7-day grocery demand** for multiple products and generates **reorder recommendations** to prevent stock-outs. The project uses historical sales patterns along with contextual signals such as weather, holidays, and promotional offers, and presents insights through an interactive dashboard.
 
-Tech Stack:
-* Python
-* Pandas
-* Scikit-learn
-* Matplotlib
-* Streamlit
+---
 
-Products Included:
+## 📌 Problem Statement
+Supermarkets often face inventory challenges such as overstocking or stock-outs due to fluctuating demand. This project addresses the problem by forecasting short-term demand and recommending timely reorders using data-driven techniques.
 
-* Rice
-* Milk
-* Bread
+---
 
-Features:
+## 🚀 Key Features
+- Predicts **7-day future demand** for grocery products
+- Trains **separate machine learning models per product**
+- Generates **reorder alerts** based on current stock levels
+- Visualizes historical trends and forecasts
+- Interactive **Streamlit dashboard** for decision support
+- Compares forecasted demand with historical averages
 
-* 1 year of auto-generated training data (365 days × 3 products)
-* Trains separate models for each product (Random Forest)
-* Predicts 7-day future demand
-* Adds reorder alerts based on current stock
-* Interactive Streamlit dashboard
-* Historical trends per product
-* Forecast vs average comparison
+---
 
+## 🛠 Tech Stack
+- **Python**
+- **Pandas**
+- **Scikit-learn**
+- **Matplotlib**
+- **Streamlit**
 
+---
 
-How to Run Locally
+## 🧾 Products Included
+- Rice  
+- Milk  
+- Bread  
 
-1. Install Libraries
+---
 
-   pip install -r requirements.txt
+## ⚙️ Machine Learning Details
+- **Training Data**:  
+  Auto-generated dataset covering **1 year (365 days × 3 products)**
+- **Model Used**:  
+  Random Forest Regressor (one model per product)
+- **Prediction Horizon**:  
+  7 days
+- **Inputs**:
+  - Historical demand
+  - Temperature
+  - Holiday indicator
+  - Offer/discount indicator
 
-2. Generate data
+---
 
-   python src/generate_csv.py
+## 📊 Dashboard Capabilities
+- Set temperature, holiday, and offer status for the next 7 days
+- View demand forecast for each product
+- Display **“OK”** or **“REORDER”** alerts
+- Visualize 1-year historical sales trends
+- Compare forecast vs historical average demand
 
-3. Train model
+---
 
-   python src/train_model.py
+## ▶️ How to Run Locally
 
-4. Run prediction (optional)
-
-   python src/predict.py
-
-5. Launch dashboard
-
-   streamlit run src/app_v2.py
-
-Dashboard Features:
-
-✅ Set temperature, holiday, and offer status for next 7 days
-
-✅ Shows demand forecast for each product
-
-✅ Displays “OK” or “REORDER” alerts
-
-✅ Shows past 1-year sales trends
-
-✅ Compares forecast with historical average
-
-Use Case:
-This system can help supermarket owners make data-driven inventory decisions, reduce waste, and prevent product shortages.
-
+### 1. Install dependencies
+```bash
+pip install -r requirements.txt
 
